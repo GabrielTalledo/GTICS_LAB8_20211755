@@ -61,8 +61,6 @@ public class MovieController {
                                                                    Authentication authentication){
         HashMap<String, Object> response = new HashMap<>();
 
-        Boolean validacion=true;
-
         if(titulo==null|| titulo.isEmpty()){
             response.put("Estado","Error!");
             response.put("Película","Debe ingresar el título de la película que desee guardar como favorita.");
