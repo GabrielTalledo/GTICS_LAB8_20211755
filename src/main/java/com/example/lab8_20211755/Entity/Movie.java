@@ -14,8 +14,11 @@ public class Movie {
     @Column(name = "id_movie", nullable = false)
     private Integer id;
 
+    @Column(name = "title", nullable = false, length = 256)
+    private String title;
+
     @Column(name = "overview", nullable = false, length = 256)
-    private String nombre;
+    private String overview;
 
     @Column(name = "popularity", nullable = false)
     private Float popularity;
